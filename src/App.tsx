@@ -9,7 +9,7 @@ import { Todo } from './models/Todo';
 function App() {
   const [state, setState] = useState<ITodoContext>(
     {
-      todos: [],
+      todos: [new Todo("Todo 1"), new Todo("Todo 2")],
       addTodo: () => {},
     });
 
